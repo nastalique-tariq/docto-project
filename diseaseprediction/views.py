@@ -1,9 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
+def home(request):
+    return render(request, 'home.html')
+
+
 def symptoms_selection(request):
-    return HttpResponse("Select your symptoms from Multiselector & click predict!")
+    return render(request, "symptoms-selection.html")
 
 def predicted_disease(request):
-    return HttpResponse("You are suffering from Gastroesophageal Disease!")
+    return render(request, "disease-prediction.html")
 
