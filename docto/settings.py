@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'diseaseprediction.apps.DiseasepredictionConfig',
+    'recommendersystem.apps.RecommendersystemConfig',
 ]
 
 MIDDLEWARE = [

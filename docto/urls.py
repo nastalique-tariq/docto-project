@@ -6,5 +6,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('diseaseprediction.urls'))
+    path('disease-predictor/', include('diseaseprediction.urls')),
+    path('recommender/', include('recommendersystem.urls'))
 ]
