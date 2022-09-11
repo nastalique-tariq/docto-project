@@ -1,7 +1,10 @@
+from pathlib import Path
 import numpy as np
 import pickle
 
-model = pickle.load(open("C://Users//Nastalique//Desktop//docto//models//disease_prediction//prediction_model.pkl", "rb"))
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+model = pickle.load(open(BASE_DIR/"disease_prediction/prediction_model.pkl", "rb"))
 
 
 def predict(id):
