@@ -10,6 +10,9 @@ class DiseaseDoctorRelation(models.Model):
     def __str__(self):
         return self.disease
 
-# class Review(models.Model):
-#     body = models.Textfield
-    
+class SymptomsforMultiselector(models.Model):
+    symptom_name = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.symptom_name
+
